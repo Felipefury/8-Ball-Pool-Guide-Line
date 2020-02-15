@@ -6,9 +6,9 @@
 **pt-BR**
 > Criado para ajudar no 8 ball pool. Entraremos em contato apos a confirmação da compra
 
-```
-link to purchase: [Selly!](https://felipegm.selly.store/product/a21ac7fe)
-```
+
+**link to purchase: [Selly!](https://felipegm.selly.store/product/a21ac7fe)**
+
 
 ![Modo 1 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo1.gif)
 
