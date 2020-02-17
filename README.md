@@ -12,4 +12,6 @@
 
 ![Modo 1 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo1.gif)
 
+![Modo 3 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo3.gif)
+
 ![Modo 2 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo2.gif)
