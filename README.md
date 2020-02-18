@@ -1,4 +1,4 @@
-# 8 Ball Pool guide line
+# 8 Ball Pool Guide Line
 
 **en-US**
 > Created to help 8 ball pool. We will contact you after confirming your purchase
