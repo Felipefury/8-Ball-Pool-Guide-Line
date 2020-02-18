@@ -8,6 +8,7 @@
 
 
 **link to purchase: [Selly!](https://felipegm.selly.store/product/a21ac7fe)**
+**Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**
 
 
 ![Modo 1 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo1.gif)
