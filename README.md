@@ -8,8 +8,10 @@
 
 
 **Link to Purchase: [Selly!](https://felipegm.selly.store/product/a21ac7fe)**
-**Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**
-**Youtube Video: [Youtube!](https://youtu.be/PkWN20q7bLE)**
+
+**See more on:**\
+**- Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**\
+**- Youtube Video: [Youtube!](https://youtu.be/PkWN20q7bLE)**
 
 ![Modo 1 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo1.gif)
 ![Modo 3 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo3.gif)
