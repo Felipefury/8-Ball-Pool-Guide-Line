@@ -11,9 +11,9 @@
 **Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**
 **Youtube Video: [Youtube!](https://youtu.be/PkWN20q7bLE)**
 
-**Line To Ball**
+**Line To Ball**\
 ![Modo 1 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo1.gif)
-**Infinite Line (Table Hack)**
+**Infinite Line (Table Hack)**\
 ![Modo 3 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo3.gif)
-**Guide Lines**
+**Guide Lines**\
 ![Modo 2 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo2.gif)
