@@ -1,4 +1,4 @@
-const { app, BrowserWindow, screen } = require('electron')
+const { app, BrowserWindow, screen, ipcMain} = require('electron')
 
 let win
 
@@ -9,7 +9,7 @@ function createWindow () {
     transparent: true,
     opacity: 1,
     frame: false,
-    icon: './img/icon.png',
+    icon: "src/img/bg.png",
     webPreferences: {
       nodeIntegration: true
     }
@@ -45,3 +45,18 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+const shell = require('electron').shell;
+
+ipcMain.on('asynchronous-message', (event, arg) => {
+  event.reply('asynchronous-reply', 'pong')
+})
+
+ipcMain.on('synchronous-message', (event, arg) => {
+  if(arg == 'ping') win.setIgnoreMouseEvents(false);
+  if(arg == 'window') {
+    shell.openExternal("http://purple-skirt.glitch.me/adfly")
+    win.minimize();
+  }
+  event.returnValue = arg;
+});
