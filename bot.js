@@ -9,7 +9,7 @@ function createWindow () {
     transparent: true,
     opacity: 1,
     frame: false,
-    icon: "src/img/bg.png",
+    icon: "src/img/icon.png",
     webPreferences: {
       nodeIntegration: true
     }
