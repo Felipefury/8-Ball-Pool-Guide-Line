@@ -1,21 +1,24 @@
 const { app, BrowserWindow, screen, ipcMain} = require('electron')
+const shell = require('electron').shell;
 
 let win
+let location = null
 
 function createWindow () {
   win = new BrowserWindow({
-    width: 1100,
-    height: 430,
+    width: 800,
+    height: 670,
     transparent: true,
     opacity: 1,
     frame: false,
-    icon: "src/img/icon.png",
+    icon: "./img/icon.png",
     webPreferences: {
       nodeIntegration: true
     }
   })
 
   win.loadFile('./src/index.html')
+
 
   win.on('closed', () => {win = null})
   win.setIgnoreMouseEvents(true)
@@ -29,7 +32,8 @@ function createWindow () {
       win.setPosition(mousePos.x, mousePos.y)
     }
 
-    if(input.key == 'b' || input.key == 'n' || input.key == 'v' || input.key == 'c') {
+    if(location != "bot") return
+    if(input.key == 'b' || input.key == 'n' || input.key == 'v' || input.key == 'c' || input.key == 'f') {
       if(input.type == 'keyDown') {
       win.setIgnoreMouseEvents(false)
       } else win.setIgnoreMouseEvents(true)
@@ -41,22 +45,25 @@ function createWindow () {
 app.on('ready', createWindow)
 
 app.on('activate', () => {
-  if (win === null) {
-    createWindow()
-  }
-})
-
-const shell = require('electron').shell;
-
-ipcMain.on('asynchronous-message', (event, arg) => {
-  event.reply('asynchronous-reply', 'pong')
+  if (win === null) createWindow()
 })
 
 ipcMain.on('synchronous-message', (event, arg) => {
-  if(arg == 'ping') win.setIgnoreMouseEvents(false);
-  if(arg == 'window') {
-    shell.openExternal("http://purple-skirt.glitch.me/adfly")
-    win.minimize();
+
+  if(typeof arg == "string") {
+    if(arg == 'mouseOn') win.setIgnoreMouseEvents(false);
+    if(arg == 'mouseOff') win.setIgnoreMouseEvents(true);
   }
+
+  else if(typeof arg == "object") {
+    if(arg.info == "reSize") {
+      win.setSize(arg.width,arg.height)
+      location = arg.location
+    } else if(arg.info == "ad") {
+      shell.openExternal(arg.link)
+      win.minimize();
+    }
+  }
+
   event.returnValue = arg;
 });
