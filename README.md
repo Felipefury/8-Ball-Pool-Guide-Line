@@ -9,6 +9,8 @@
 
 **Link to Purchase: [Selly!](https://felipegm.selly.store/product/a21ac7fe)**
 
+**We have a free version, Join our Discord Server**
+
 **See more on:**\
 **- Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**\
 **- Youtube Video: [Youtube!](https://youtu.be/PkWN20q7bLE)**
