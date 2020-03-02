@@ -7,7 +7,7 @@
 > Criado para ajudar no 8 ball pool. Entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao discord e estaremos prontos para te ajudar.
 
 
-**Link to Purchase: [Selly!](https://felipegm.selly.store/product/a21ac7fe)**
+**Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)**
 
 **We have a free version, Join our Discord Server**
 
