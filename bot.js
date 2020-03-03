@@ -19,7 +19,10 @@ function createWindow () {
 
   win.loadFile("./src/index.html");
 
-  win.on("closed", () => {win = null});
+  win.on("closed", () => {
+    win = null
+  });
+  
   win.setIgnoreMouseEvents(true)
   win.setAlwaysOnTop(true, "floating", 1);
 
@@ -37,7 +40,7 @@ function createWindow () {
     
     if(input.key === "b" || input.key === "n" || input.key === "v" || input.key === "c" || input.key === "f") {
       if(input.type === "keyDown") {
-        win.setIgnoreMouseEvents(false)
+        win.setIgnoreMouseEvents(false);
       } else { 
         win.setIgnoreMouseEvents(true);
       }
