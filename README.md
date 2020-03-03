@@ -6,7 +6,7 @@
 **pt-BR**
 > Criado para ajudar no 8 ball pool. Entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao discord e estaremos prontos para te ajudar.
 
-**Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)**
+Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 
 **See more on:**\
 **- Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**\
@@ -26,7 +26,7 @@
 5. Create an account and login.
 6. Now watch an AD and you have access to the free version.
 
-***If you want to have a free trial of the paid version join our discord.***
+**If you want to have a free trial of the paid version join our discord.**
 
 **Todo**
 
