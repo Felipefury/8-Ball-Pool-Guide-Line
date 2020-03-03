@@ -39,7 +39,9 @@ function createWindow () {
     if(input.key === "b" || input.key === "n" || input.key === "v" || input.key === "c" || input.key === "f") {
       if(input.type === "keyDown") {
       win.setIgnoreMouseEvents(false)
-      } else win.setIgnoreMouseEvents(true);
+      } else { 
+        win.setIgnoreMouseEvents(true);
+      }
     }
 
   })
