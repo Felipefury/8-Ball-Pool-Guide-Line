@@ -1,4 +1,12 @@
-# 8 Ball Pool Guide Line
+<h1 align="center">8 Ball Pool Guide Line</h1>
+<p align="center">
+    <a href="https://discord.gg/CxG3f7S">
+        <img src="https://img.shields.io/discord/675323046680330261.svg?label=Discord&logo=discord" alt="Discord"/>
+    </a>
+     <a href="https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line/archive/master.zip">
+        <img src="https://img.shields.io/github/downloads/Felipefury/8-Ball-Pool-Hack-Guide-Line/total"/>
+    </a>
+</p>
 
 **en-US**
 > Created to help 8 ball pool. We will contact you after confirming your purchase. If you have any trouble, do a issue, any question? go to discord and we are ready to help you.
