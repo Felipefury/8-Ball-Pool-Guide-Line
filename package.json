@@ -6,10 +6,18 @@
   "scripts": {
     "start": "electron ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line.git"
+  },
   "author": "Felipe GM and Zeedy",
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
     "electron": "^8.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line/issues"
+  },
+  "homepage": "https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line#readme"
 }
