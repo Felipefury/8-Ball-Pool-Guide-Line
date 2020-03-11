@@ -14,7 +14,8 @@
 **pt-BR**
 > Criado para ajudar no 8 ball pool. Entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao discord e estaremos prontos para te ajudar.
 
-Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I) ***we accept bitcoin***
+Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
+***we also accept bitcoin***
 
 **See more on:**\
 **- Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**\
