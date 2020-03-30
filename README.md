@@ -37,8 +37,7 @@ Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 
 **If you want to have a free trial of the paid version join our discord.**
 
-
-# why our system is safe and you will not be punished
+# why our system is safe and you will not be punished?
 
 > first you need to understand how it works**
 
