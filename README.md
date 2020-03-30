@@ -37,6 +37,14 @@ Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 
 **If you want to have a free trial of the paid version join our discord.**
 
+
+# why our system is safe and you will not be punished
+
+> first you need to understand how it works**
+
+we do not do any type of injection or change in the game's source code, we created an overlay on your screen, so miniclip will never find out
+![How work](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/howwork.gif)
+
 **Todo**
 
 > Executable version
