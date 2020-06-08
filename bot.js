@@ -1,8 +1,9 @@
-const { app, BrowserWindow, screen, ipcMain} = require("electron");
+const { app, BrowserWindow, screen, globalShortcut,ipcMain} = require("electron");
 const shell = require("electron").shell;
 
 let win;
-let location = null
+let location = "bot"
+let winxy = {x:0,y:0}
 
 function createWindow () {
   win = new BrowserWindow({
@@ -25,27 +26,6 @@ function createWindow () {
   
   win.setIgnoreMouseEvents(true)
   win.setAlwaysOnTop(true, "floating", 1);
-
-  win.webContents.on("before-input-event", (event, input) => {
-    win.webContents.setIgnoreMenuShortcuts(!input.control && !input.meta);
-
-    if(input.control === true) {
-      let mousePos = screen.getCursorScreenPoint();
-      win.setPosition(mousePos.x, mousePos.y);
-    }
-
-    if(location !== "bot") {
-      return;
-    }
-    
-    if(input.key === "b" || input.key === "n" || input.key === "v" || input.key === "c" || input.key === "f") {
-      if(input.type === "keyDown") {
-        win.setIgnoreMouseEvents(false);
-      } else { 
-        win.setIgnoreMouseEvents(true);
-      }
-    }
-  });
 }
 
 app.allowRendererProcessReuse = true
@@ -58,10 +38,66 @@ app.on("activate", () => {
   }
 });
 
+getxy = function() {
+  return {x: screen.getCursorScreenPoint().x - winxy.x  - 2 * Math.PI,y: screen.getCursorScreenPoint().y - winxy.y - 2 * Math.PI}
+}
+
+app.whenReady().then(() => {
+  console.clear();
+  console.log('    _/        _/  _/       ');
+  console.log('         _/_/_/  _/_/_/    ');
+  console.log('  _/  _/    _/  _/    _/   ');
+  console.log(' _/  _/    _/  _/    _/    ');
+  console.log('_/    _/_/_/  _/_/_/       \n\n');
+
+  console.log('(You can\'t type anymore while using the hack)\n\nV3 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
+  globalShortcut.register('Z', () => {
+    let mousePos = screen.getCursorScreenPoint();
+    win.setPosition(mousePos.x, mousePos.y);
+    winxy.x = mousePos.x
+    winxy.y = mousePos.y
+  })
+
+  globalShortcut.register('X', () => {
+    if(win.getOpacity() <= 0) {
+      win.setOpacity(0.9)
+    } else win.setOpacity(0)
+  })
+  globalShortcut.register('B', () => {
+    win.webContents.send('key', 'B', getxy())
+  })
+  globalShortcut.register('N', () => {
+    win.webContents.send('key', 'N', getxy())
+  })
+  globalShortcut.register('V', () => {
+    win.webContents.send('key', 'V', getxy())
+  })
+  globalShortcut.register('F', () => {
+    win.webContents.send('key', 'F', getxy())
+  })
+  globalShortcut.register('C', () => {
+    win.webContents.send('key', 'C', getxy())
+  })
+  globalShortcut.register('M', () => {
+    win.webContents.send('key', 'M', getxy())
+  })
+  globalShortcut.register('K', () => {
+    win.webContents.send('key', 'K', getxy())
+  })
+  globalShortcut.register('Up', () => {
+    win.webContents.send('key', 'UP', getxy())
+  })
+  globalShortcut.register('Down', () => {
+    win.webContents.send('key', 'DOWN', getxy())
+  })
+})
+
 ipcMain.on("synchronous-message", (event, arg) => {
 
   if(typeof arg === "string") {
-    if(arg === "mouseOn") {
+    if(arg == "fullscreen") {
+      win.setFullScreen(true);
+    } else if(arg === "mouseOn") {
       win.setIgnoreMouseEvents(false);
     } else if(arg === "mouseOff") {
       win.setIgnoreMouseEvents(true);
