@@ -28,8 +28,9 @@ Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 ## Installation
 
 **- Demo video: [Youtube!](https://youtu.be/s4fKPOYkkuU)**
-1. Install node.js
-2. Download and extract the repository to your pc.
+
+1. Install [Node.JS!](https://nodejs.org/en/download/)
+2. Download and extract the [repository](https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line/archive/master.zip) to your pc.
 3. Click on install.bat (it'll auto close, if it doesn't close after few minutes, restart it).
 4. Click on run.bat (it'll open a window)
 5. Create an account and login.
