@@ -51,10 +51,10 @@ app.whenReady().then(() => {
   console.log('_/    _/_/_/  _/_/_/       \n\n');
 
   console.log('V3.1 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
+  
 })
 
 function registerX() {
-
   globalShortcut.register('Shift+X', () => {
     if(win.getOpacity() <= 0) {
       win.setOpacity(1);
@@ -102,6 +102,18 @@ function register() {
     globalShortcut.register('Down', () => {
       win.webContents.send('key', 'DOWN', getxy())
   })
+    globalShortcut.register('Left', () => {
+      if(win.getOpacity() <= 1) {
+        win.setOpacity(win.getOpacity() - .05);
+        win.webContents.send('key', 'LEFT', win.getOpacity())
+      } 
+  })
+    globalShortcut.register('Right', () => {
+      if(win.getOpacity() >= 0) {
+        win.setOpacity(win.getOpacity() + .05);
+        win.webContents.send('key', 'RIGHT', win.getOpacity())
+      } 
+  })
 }
 
 ipcMain.on("synchronous-message", (event, arg) => {
@@ -127,7 +139,9 @@ ipcMain.on("synchronous-message", (event, arg) => {
     } else if(arg.info === "ad") {
       shell.openExternal(arg.link);
       win.minimize();
-    }
+    } else if(arg.info === "console") {
+        console.log(arg.log)
+      }
   }
 
   event.returnValue = arg;
