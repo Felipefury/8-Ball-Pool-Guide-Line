@@ -74,46 +74,48 @@ function register() {
     winxy.x = mousePos.x
     winxy.y = mousePos.y
   })
-
-  globalShortcut.register('B', () => {
-    win.webContents.send('key', 'B', getxy())
+  globalShortcut.register('M', () => {
+    win.webContents.send('key', 'M', getxy())
   })
+  globalShortcut.register('V', () => {
+    win.webContents.send('key', 'V', getxy())
+  })
+
+  if(location == 'bot') {
+    globalShortcut.register('B', () => {
+      win.webContents.send('key', 'B', getxy())
+    })
     globalShortcut.register('N', () => {
       win.webContents.send('key', 'N', getxy())
-  })
-    globalShortcut.register('V', () => {
-      win.webContents.send('key', 'V', getxy())
-  })
+    })
     globalShortcut.register('F', () => {
       win.webContents.send('key', 'F', getxy())
-  })
+    })
     globalShortcut.register('C', () => {
       win.webContents.send('key', 'C', getxy())
-  })
-    globalShortcut.register('M', () => {
-      win.webContents.send('key', 'M', getxy())
-  })
+    })
     globalShortcut.register('K', () => {
       win.webContents.send('key', 'K', getxy())
-  })
+    })
     globalShortcut.register('Up', () => {
       win.webContents.send('key', 'UP', getxy())
-  })
+    })
     globalShortcut.register('Down', () => {
       win.webContents.send('key', 'DOWN', getxy())
-  })
+    })
     globalShortcut.register('Left', () => {
       if(win.getOpacity() <= 1) {
         win.setOpacity(win.getOpacity() - .05);
         win.webContents.send('key', 'LEFT', win.getOpacity())
       } 
-  })
+    })
     globalShortcut.register('Right', () => {
       if(win.getOpacity() >= 0) {
         win.setOpacity(win.getOpacity() + .05);
         win.webContents.send('key', 'RIGHT', win.getOpacity())
-      } 
-  })
+        } 
+    })
+  }
 }
 
 ipcMain.on("synchronous-message", (event, arg) => {
@@ -135,7 +137,7 @@ ipcMain.on("synchronous-message", (event, arg) => {
     if(arg.info === "reSize") {
       win.setSize(arg.width, arg.height);
       location = arg.location;
-      if(location == 'bot') register();
+      register();
     } else if(arg.info === "ad") {
       shell.openExternal(arg.link);
       win.minimize();
