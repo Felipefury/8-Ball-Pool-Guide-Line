@@ -50,6 +50,6 @@ We do not do any type of injection or changes in the game's source code, we crea
 
 1. Executable version
 2. Fast bank shot keys
-3. Bank shot with more than reflex in one side
+3. Bank shot with more reflex
 4. (Maybe) powermeter
 5. Lucky shot overlay (images)
