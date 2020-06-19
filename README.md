@@ -38,18 +38,18 @@ Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 
 **If you want to have a free trial of the paid version join our discord and message one of the admins.**
 
-# why our system is safe and you will not be punished?
+# Why our system is safe and you will not be punished?
 
 > How does it work?
 
-We do not do any type of injection or change the game's source code, we create an overlay on your screen, so miniclip will never find out and you will be banned.
+We do not do any type of injection or changes in the game's source code, we create an overlay on your screen, so miniclip won't ban you as them don't detect anything.
 
 ![How work](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/howwork.gif)
 
 **Todo**
 
-> Executable version
-> Fast bank shot keys
-> Bank shot with more than reflex in one side
-> (Maybe) powermeter
-> Lucky shot overlay (images)
+1. Executable version
+2. Fast bank shot keys
+3. Bank shot with more than reflex in one side
+4. (Maybe) powermeter
+5. Lucky shot overlay (images)
