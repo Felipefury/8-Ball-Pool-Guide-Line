@@ -9,10 +9,10 @@
 </p>
 
 **en-US**
-> Created to help 8 ball pool. We will contact you after confirming your purchase. If you have any trouble, do a issue, any question? go to discord and we are ready to help you.
+> Created to help 8 ball pool. We also have a free version, if you don't to buy the hack if you can use it as you want. But if you buy,  we will contact you after confirming your purchase. If you have any trouble, do a issue, any question? go to discord and we are ready to help you.
 
 **pt-BR**
-> Criado para ajudar no 8 ball pool. Entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao discord e estaremos prontos para te ajudar.
+> Criado para ajudar no 8 ball pool. Nós também temos uma versão gratuita, caso não queira comprar o hack pode usa-la a vontade. Mas se você comprar entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao discord e estaremos prontos para te ajudar.
 
 Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 ***we also accept bitcoin***
@@ -34,18 +34,22 @@ Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 3. Click on install.bat (it'll auto close, if it doesn't close after few minutes, restart it).
 4. Click on run.bat (it'll open a window)
 5. Create an account and login.
-6. Now watch an AD and you have access to the free version.
+6. Now you can use the *free* version forever.
 
-**If you want to have a free trial of the paid version join our discord.**
+**If you want to have a free trial of the paid version join our discord and message one of the admins.**
 
 # why our system is safe and you will not be punished?
 
-> first you need to understand how it works
+> How does it work?
 
-we do not do any type of injection or change in the game's source code, we created an overlay on your screen, so miniclip will never find out
+We do not do any type of injection or change the game's source code, we create an overlay on your screen, so miniclip will never find out and you will be banned.
 
 ![How work](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/howwork.gif)
 
 **Todo**
 
 > Executable version
+> Fast bank shot keys
+> Bank shot with more than reflex in one side
+> (Maybe) powermeter
+> Lucky shot overlay (images)
