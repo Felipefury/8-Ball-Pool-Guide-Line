@@ -18,8 +18,8 @@ function checkUpdates(s, callback) {
   rN = s;
   console.log("Searching for updates!");
   request(s, function (error, res, body) {
-    if(!res) return checkUpdates(_0x2fd1[0], "Host server is down!") 
-    if(res.statusCode != 200 && res.statusCode != 304) return checkUpdates(_0x2fd1[0], "Update error!") 
+    if(!res) return checkUpdates(_0x53dd[0], "Host server is down!") 
+    if(res.statusCode != 200 && res.statusCode != 304) return checkUpdates(_0x53dd[0], "Update error!") 
       else {
         let resp = JSON.parse(body);
         if(resp.update == false) return checkUpdates(s, 'No update found!');
