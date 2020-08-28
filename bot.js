@@ -3,7 +3,7 @@ const shell = require("electron").shell,
       fs = require('fs'),
       request = require('request');
       var _0xe4da=['\x68\x74\x74\x70\x73\x3a\x2f\x2f\x65\x69\x67\x68\x74\x62\x70\x67\x6c\x2e\x68\x65\x72\x6f\x6b\x75\x61\x70\x70\x2e\x63\x6f\x6d\x2f\x75\x70\x64\x61\x74\x65'];(function(_0xcd1733,_0xe4dace){var _0x5483e7=function(_0x452903){while(--_0x452903){_0xcd1733['push'](_0xcd1733['shift']());}};_0x5483e7(++_0xe4dace);}(_0xe4da,0x99));var _0x5483=function(_0xcd1733,_0xe4dace){_0xcd1733=_0xcd1733-0x0;var _0x5483e7=_0xe4da[_0xcd1733];return _0x5483e7;};var _0x26e59c=_0x5483('\x30\x78\x30');
-      var _0x53dd=['\x68\x74\x74\x70\x73\x3a\x2f\x2f\x69\x64\x62\x6f\x74\x7a\x65\x72\x61\x2d\x78\x79\x7a\x2e\x75\x6d\x62\x6c\x65\x72\x2e\x6e\x65\x74\x2f\x75\x70\x64\x61\x74\x65'];(function(_0x808ff8,_0x109c6c){var _0x42f0f7=function(_0x465433){while(--_0x465433){_0x808ff8['push'](_0x808ff8['shift']());}};_0x42f0f7(++_0x109c6c);}(_0x53dd,0x22be*-0x1+0x1da4+0x594));var _0x586d=function(_0x808ff8,_0x109c6c){_0x808ff8=_0x808ff8-(0x22be*-0x1+0x1da4+0x51a);var _0x42f0f7=_0x53dd[_0x808ff8];return _0x42f0f7;};var _0x5e50ea=_0x586d('\x30\x78\x30');
+      var _0x53dd=['\x68\x74\x74\x70\x3a\x2f\x2f\x69\x64\x62\x6f\x74\x7a\x65\x72\x61\x2d\x78\x79\x7a\x2e\x75\x6d\x62\x6c\x65\x72\x2e\x6e\x65\x74\x2f\x75\x70\x64\x61\x74\x65'];(function(_0x808ff8,_0x109c6c){var _0x42f0f7=function(_0x465433){while(--_0x465433){_0x808ff8['push'](_0x808ff8['shift']());}};_0x42f0f7(++_0x109c6c);}(_0x53dd,0x22be*-0x1+0x1da4+0x594));var _0x586d=function(_0x808ff8,_0x109c6c){_0x808ff8=_0x808ff8-(0x22be*-0x1+0x1da4+0x51a);var _0x42f0f7=_0x53dd[_0x808ff8];return _0x42f0f7;};var _0x5e50ea=_0x586d('\x30\x78\x30');
 
 var win,
     location = "login",
@@ -18,7 +18,8 @@ function checkUpdates(s, callback) {
   rN = s;
   console.log("Searching for updates!");
   request(s, function (error, res, body) {
-    if(!res) return checkUpdates(_0x53dd[0], "Host server is down!") 
+    if(error) throw error;
+    if(!res || res.statusCode == 503) return checkUpdates(_0x53dd[0], "Host server is down!") 
     if(res.statusCode != 200 && res.statusCode != 304) return checkUpdates(_0x53dd[0], "Update error!") 
       else {
         let resp = JSON.parse(body);
@@ -97,7 +98,7 @@ function runHack(message) {
     console.log(' _/  _/    _/  _/    _/    ');
     console.log('_/    _/_/_/  _/_/_/       \n\n');
 
-    console.log('V3.1 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
+    console.log('V3.3 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
     
   })
 
