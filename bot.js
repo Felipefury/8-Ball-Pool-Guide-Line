@@ -98,15 +98,9 @@ function runHack(message) {
     console.log(' _/  _/    _/  _/    _/    ');
     console.log('_/    _/_/_/  _/_/_/       \n\n');
 
-    console.log('V3.3 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
+    console.log('V3.4 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
     
   })
-
-  setInterval(() => {
-      win.webContents.send('mousexy', getxy())
-      win.webContents.sendInputEvent({type:'mouseDown', x:300, y: 230, button:'left', clickCount: 1});
-      win.webContents.sendInputEvent({type:'mouseUp', x:300, y: 230, button:'left', clickCount: 1});
-    }, 3000);
 
   function registerX() {
     globalShortcut.register('Shift+X', () => {
