@@ -9,10 +9,10 @@
 </p>
 
 **en-US**
-> Created to help 8 ball pool. We also have a free version, if you don't to buy the hack if you can use it as you want. But if you buy,  we will contact you after confirming your purchase. If you have any trouble, do a issue, any question? go to discord and we are ready to help you.
+> Created to help 8 ball pool. We also have a free version, if you don't to buy the hack if you can use it as you want. But if you buy,  we will contact you after confirming your purchase. If you have any trouble, do a issue, any question? go to [discord](https://discord.gg/CxG3f7S) and we are ready to help you.
 
 **pt-BR**
-> Criado para ajudar no 8 ball pool. Nós também temos uma versão gratuita, caso não queira comprar o hack pode usa-la a vontade. Mas se você comprar entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao discord e estaremos prontos para te ajudar.
+> Criado para ajudar no 8 ball pool. Nós também temos uma versão gratuita, caso não queira comprar o hack pode usa-la a vontade. Mas se você comprar entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao [discord](https://discord.gg/CxG3f7S) e estaremos prontos para te ajudar.
 
 Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 ***we also accept bitcoin***
