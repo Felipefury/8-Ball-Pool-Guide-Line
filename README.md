@@ -21,6 +21,7 @@ Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 **- Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**\
 **- Youtube Video: [Youtube!](https://youtu.be/Lgy_c7YkUyA)**
 
+Copyright@2020 Indústria dos Bots all rights reserved.
 ![Modo 1 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo1.gif)
 ![Modo 3 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo3.gif)
 ![Modo 2 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo2.gif)
