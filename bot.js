@@ -18,6 +18,7 @@ function checkUpdates(s, callback) {
   rN = s;
   console.log("Searching for updates!");
   request(s, function (error, res, body) {
+    console.log('Server', s, 'Code', res.statusCode);
     if(error) throw error;
     if(!res || res.statusCode == 503) return checkUpdates(_0x53dd[0], "Host server is down!") 
     if(res.statusCode != 200 && res.statusCode != 304) return checkUpdates(_0x53dd[0], "Update error!") 
@@ -98,7 +99,7 @@ function runHack(message) {
     console.log(' _/  _/    _/  _/    _/    ');
     console.log('_/    _/_/_/  _/_/_/       \n\n');
 
-    console.log('V3.4 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
+    console.log('V3.8 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
     
   })
 
