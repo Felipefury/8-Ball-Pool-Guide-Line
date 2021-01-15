@@ -98,7 +98,7 @@ function runHack(message) {
     console.log(' _/  _/    _/  _/    _/    ');
     console.log('_/    _/_/_/  _/_/_/       \n\n');
 
-    console.log('V3.8 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
+    console.log('V3.0.9 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
     
   })
 
