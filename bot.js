@@ -18,7 +18,6 @@ function checkUpdates(s, callback) {
   rN = s;
   console.log("Searching for updates!");
   request(s, function (error, res, body) {
-    console.log('Server', s, 'Code', res.statusCode);
     if(error) throw error;
     if(!res || res.statusCode == 503) return checkUpdates(_0x53dd[0], "Host server is down!") 
     if(res.statusCode != 200 && res.statusCode != 304) return checkUpdates(_0x53dd[0], "Update error!") 
