@@ -52,7 +52,7 @@ We do not do any type of injection or changes in the game's source code, we crea
 
 you can check it [Here](https://shoppy.gg/@FelipeGM/feedback)
 
-![FeedBack](https://cdn.discordapp.com/attachments/675323046680330264/751873330314870833/a22.png)
+![FeedBack](https://cdn.discordapp.com/attachments/396904623668985865/810545718568681574/feedback.png)
 
 **Todo**
 
