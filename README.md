@@ -23,9 +23,9 @@ Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
 
 Copyright@2020 Indústria dos Bots all rights reserved.
 
-![Modo 1 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo1.gif)
-![Modo 3 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo3.gif)
-![Modo 2 guide line](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/gifModo2.gif)
+![Modo 1 guide line](https://cdn.discordapp.com/attachments/396904623668985865/810546822670057523/gifModo3.gif)
+![Modo 3 guide line](https://cdn.discordapp.com/attachments/396904623668985865/810546817338834994/gifModo1.gif)
+![Modo 2 guide line](https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif)
 
 ## Installation
 
@@ -46,7 +46,7 @@ Copyright@2020 Indústria dos Bots all rights reserved.
 
 We do not do any type of injection or changes in the game's source code, we create an overlay on your screen, so miniclip won't ban you as them don't detect anything.
 
-![How work](https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-overlay/master/img/howwork.gif)
+![How work](https://cdn.discordapp.com/attachments/396904623668985865/810546814481727558/howwork.gif)
 
 # Shoppy Feedback
 
