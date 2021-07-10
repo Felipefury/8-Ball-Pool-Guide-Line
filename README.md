@@ -15,7 +15,7 @@
 > Criado para ajudar no 8 ball pool. Nós também temos uma versão gratuita, caso não queira comprar o hack pode usa-la a vontade. Mas se você comprar entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao [discord](https://discord.gg/CxG3f7S) e estaremos prontos para te ajudar.
 
 Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
-***we also accept bitcoin***
+***we also accept Bitcoin, Ethereum, Litecoin***
 
 **See more on:**\
 **- Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**\
