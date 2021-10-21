@@ -1,214 +1,144 @@
-const { app, BrowserWindow, screen, globalShortcut, ipcMain} = require("electron");
-const shell = require("electron").shell,
-      fs = require('fs'),
-      request = require('request');
-      var _0xe4da=['\x68\x74\x74\x70\x73\x3a\x2f\x2f\x65\x69\x67\x68\x74\x62\x70\x67\x6c\x2e\x68\x65\x72\x6f\x6b\x75\x61\x70\x70\x2e\x63\x6f\x6d\x2f\x75\x70\x64\x61\x74\x65'];(function(_0xcd1733,_0xe4dace){var _0x5483e7=function(_0x452903){while(--_0x452903){_0xcd1733['push'](_0xcd1733['shift']());}};_0x5483e7(++_0xe4dace);}(_0xe4da,0x99));var _0x5483=function(_0xcd1733,_0xe4dace){_0xcd1733=_0xcd1733-0x0;var _0x5483e7=_0xe4da[_0xcd1733];return _0x5483e7;};var _0x26e59c=_0x5483('\x30\x78\x30');
-      var _0x53dd=['\x68\x74\x74\x70\x3a\x2f\x2f\x69\x64\x62\x6f\x74\x7a\x65\x72\x61\x2d\x78\x79\x7a\x2e\x75\x6d\x62\x6c\x65\x72\x2e\x6e\x65\x74\x2f\x75\x70\x64\x61\x74\x65'];(function(_0x808ff8,_0x109c6c){var _0x42f0f7=function(_0x465433){while(--_0x465433){_0x808ff8['push'](_0x808ff8['shift']());}};_0x42f0f7(++_0x109c6c);}(_0x53dd,0x22be*-0x1+0x1da4+0x594));var _0x586d=function(_0x808ff8,_0x109c6c){_0x808ff8=_0x808ff8-(0x22be*-0x1+0x1da4+0x51a);var _0x42f0f7=_0x53dd[_0x808ff8];return _0x42f0f7;};var _0x5e50ea=_0x586d('\x30\x78\x30');
+const { BrowserWindow, app, screen, globalShortcut, ipcMain} = require("electron");
+const request = require("request");
+const fs = require('fs');
 
-var win,
-    location = "login",
-    winxy = {x:0,y:0},
-    hOp = 1,
-    mH = false,
-    rN;
+init = function() {
+    console.log("V4.0.0 coded By Zeedy and GM, If you have any suggestion message us on discord. Don't close the CMD while using the hack.");
 
-checkUpdates(_0xe4da[0]);
-function checkUpdates(s, callback) {
-  if(callback && s == rN) return runHack(callback);
-  rN = s;
-  console.log("Searching for updates!");
-  request(s, function (error, res, body) {
-    if(error) throw error;
-    if(!res || res.statusCode == 503) return checkUpdates(_0x53dd[0], "Host server is down!") 
-    if(res.statusCode != 200 && res.statusCode != 304) return checkUpdates(_0x53dd[0], "Update error!") 
-      else {
-        let resp = JSON.parse(body);
-        if(resp.update == false) return checkUpdates(s, 'No update found!');
-        else if(resp.files){
-          fs.readFile('package.json', function (err, data) {
-            if (err) return checkUpdates(s, "Update error!")
-            let pData = JSON.parse(data);
-            if(resp.version != pData.version) {
-              let lth = Object.keys(resp.files).length;
-              let lF = Object.keys(resp.files)[Object.keys(resp.files).length - 1]
-              for(i = 0; i < lth; i++) {
-                  let ll = resp.files[Object.keys(resp.files)[i]];
-                  let fl = Object.keys(resp.files)[i];
-                  request(ll, function (error, res, body) {
-                   fs.writeFile(fl, body, 'utf8', function (err) {
-                    delete require.cache[fl];
-                    console.log(fl + ' was updated');
-                    if(fl == lF) checkUpdates(s, "Everythings is updated :D");
-                    if (err) return checkUpdates(s, "Update error!")
-                    });
-                });
-              }            
-            } else return checkUpdates(s, "Everythings is updated :D")
-          });
+    function createWindow() {
+        win = new BrowserWindow({
+            width: 330,
+            height: 515,
+            transparent: true,
+            opacity: 1,
+            frame: false,
+            icon: "./src/img/icon.png",
+            webPreferences: {
+                nodeIntegration: true,
+                webviewTag: true
+            }
+        });
 
-        } else return checkUpdates(s, "No update found!")
-    }
-  });
-}
+        win.loadFile("./src/index.html");
 
-function runHack(message) {
-  if(message) console.log(message);
-  createWindow();
-  function createWindow () {
-    win = new BrowserWindow({
-      width: 800,
-      height: 670,
-      transparent: true,
-      opacity: 1,
-      frame: false,
-      icon: "./img/icon.png",
-      webPreferences: {
-        nodeIntegration: true,
-        webviewTag: true
-      }
-    })
+        win.on("closed", () => {
+            win = null
+        });
 
-    win.loadFile("./src/index.html");
-
-    win.on("closed", () => {
-      win = null
-    });
-    
-    win.setIgnoreMouseEvents(true)
-    win.setAlwaysOnTop(true, "floating", 1);
-  }
-
-  app.on("ready", createWindow);
-
-  app.on("activate", () => {
-    if (win === null) { 
-      createWindow();
-    }
-  });
-
-  getxy = function() {
-    return {x: screen.getCursorScreenPoint().x - winxy.x  - 2 * Math.PI,y: screen.getCursorScreenPoint().y - winxy.y - 2 * Math.PI}
-  }
-
-  app.whenReady().then(() => {
-    console.clear();
-    console.log('\n\n\n    _/        _/  _/       ');
-    console.log('         _/_/_/  _/_/_/    ');
-    console.log('  _/  _/    _/  _/    _/   ');
-    console.log(' _/  _/    _/  _/    _/    ');
-    console.log('_/    _/_/_/  _/_/_/       \n\n');
-
-    console.log('V3.0.9 coded By Zeedy and GM\nIf you have any suggestion message us on discord.\n\nDon\'t close the CMD while using the hack.');
-    
-  })
-
-  function registerX() {
-    globalShortcut.register('Shift+X', () => {
-      if(win.getOpacity() <= 0) {
-        mH = false;
-        hop = hOp += .05
-        win.setOpacity(hOp);
-        register();
-      } else {
-        mH = true; 
-        win.setOpacity(0);
-        globalShortcut.unregisterAll()
-        setTimeout(registerX, 500);
-      }
-    });
-    globalShortcut.register('Left', () => {
-      if(win.getOpacity() <= 1) {
-        win.setOpacity(win.getOpacity() - .05);
-        win.webContents.send('key', 'LEFT', win.getOpacity())
-        hOp = win.getOpacity();
-        if(win.getOpacity() <= 0) {
-          globalShortcut.unregisterAll()
-          setTimeout(registerX, 500);
-        }
-      } 
-    })
-    globalShortcut.register('Right', () => {
-      if(win.getOpacity() >= 0 && mH == false) {
-        if(!globalShortcut.isRegistered("Z")) {
-          register();
-
-        }
-        win.setOpacity(win.getOpacity() + .05);
-        win.webContents.send('key', 'RIGHT', win.getOpacity())
-        hOp = win.getOpacity();
-      } 
-    })
-  }
-
-  function register() {
-   if(location == "bot" || location == "b0t") {
-     globalShortcut.register('Z', () => {
-       let mousePos = screen.getCursorScreenPoint();
-       win.setPosition(mousePos.x, mousePos.y);
-       winxy.x = mousePos.x
-       winxy.y = mousePos.y
-     })
-     globalShortcut.register('M', () => {
-       win.webContents.send('key', 'M', getxy())
-     })
-     globalShortcut.register('V', () => {
-       win.webContents.send('key', 'V', getxy())
-     })
-    }
-    if(location == 'bot') {
-      globalShortcut.register('B', () => {
-        win.webContents.send('key', 'B', getxy())
-      })
-      globalShortcut.register('N', () => {
-        win.webContents.send('key', 'N', getxy())
-      })
-      globalShortcut.register('F', () => {
-        win.webContents.send('key', 'F', getxy())
-      })
-      globalShortcut.register('C', () => {
-        win.webContents.send('key', 'C', getxy())
-      })
-      globalShortcut.register('Up', () => {
-        win.webContents.send('key', 'UP', getxy())
-      })
-      globalShortcut.register('Down', () => {
-        win.webContents.send('key', 'DOWN', getxy())
-      })
-    }
-  }
-
-  ipcMain.on("synchronous-message", (event, arg) => {
-
-    if(typeof arg === "string") {
-      if(arg.includes("fullscreen")) {
-        if(parseFloat(arg) <= 1) {
-          hOp = parseFloat(arg);
-          win.setOpacity(hOp);
-        }
-        win.setFullScreen(true);
-        location = 'bot';
-        register();
-        registerX();
-      } else if(arg === "mouseOn") {
         win.setIgnoreMouseEvents(false);
-      } else if(arg === "mouseOff") {
-        win.setIgnoreMouseEvents(true);
-      }
-    }
+        win.setAlwaysOnTop(true, "floating", 1);
+    };
 
-    else if(typeof arg === "object") {
-      if(arg.info === "reSize") {
-        win.setSize(arg.width, arg.height);
-        location = arg.location;
-        register();
-      } else if(arg.info === "ad") {
-        shell.openExternal(arg.link);
-        win.minimize();
-      } else if(arg.info === "console") {
-        console.log(arg.log)
-      }
-    }
-    event.returnValue = arg;
-  });  
-}
-app.allowRendererProcessReuse = true
+    var location;
+
+    app.on("ready", createWindow);
+
+    app.on("activate", () => {
+        if (win == undefined) {
+            createWindow();
+        };
+    });
+
+    getxy = function() {
+        return {
+            x: screen.getCursorScreenPoint().x - win.getPosition()[0] - 2 * Math.PI,
+            y: screen.getCursorScreenPoint().y - win.getPosition()[1] - 2 * Math.PI
+        };
+    };
+
+    save = function() {
+        globalShortcut.register('Shift+X', () => {
+            keys == true ? (globalShortcut.unregisterAll(), keys = false) : register();
+            win.webContents.send('key', 'OP')
+            setTimeout(save, 90);
+        });
+    };
+
+    register = function() {
+        globalShortcut.register('Z', () => {win.setPosition(screen.getCursorScreenPoint().x, screen.getCursorScreenPoint().y)});
+        globalShortcut.register('M', () => {win.webContents.send('key', 'M', getxy())});
+        globalShortcut.register('V', () => {win.webContents.send('key', 'V', getxy())});
+
+        if("bot" == location) {
+            globalShortcut.register('B', () => {win.webContents.send('key', 'B', getxy())});
+            globalShortcut.register('N', () => {win.webContents.send('key', 'N', getxy())});
+            globalShortcut.register('F', () => {win.webContents.send('key', 'F', getxy())});
+            globalShortcut.register('C', () => {win.webContents.send('key', 'C', getxy())});
+            globalShortcut.register('Up', () => {win.webContents.send('key', 'UP', getxy())});
+            globalShortcut.register('Down', () => {win.webContents.send('key', 'DOWN', getxy())});
+            globalShortcut.register('Left', () => {win.webContents.send('key', 'LEFT')});
+            globalShortcut.register('Right', () => {win.webContents.send('key', 'RIGHT')});
+        };
+        keys = true
+    };
+
+    ipcMain.on("synchronous-message", (event, arg) => {
+        if ("string" == typeof arg) {
+            switch (arg) {
+                case "fullscreen": win.setFullScreen(true); break;
+                case "mouse_on": win.setIgnoreMouseEvents(false); break;
+                case "mouse_off": win.setIgnoreMouseEvents(true); break;
+            };
+        } else if("object" == typeof arg) {
+            switch (arg.info) {
+                case "resize": win.setSize(arg.width, arg.height); break;
+                case "location": 
+                    location = arg.location; 
+                    if("login" == arg.location) {
+                        globalShortcut.unregisterAll()
+                    } else {
+                        arg.location == "bot" ? (save(), register()) : register(); 
+                    };
+                break;
+            };
+        };
+        event.returnValue = arg;
+    });
+    
+    app.allowRendererProcessReuse = true
+
+    if(app.isReady()) {
+        createWindow()
+    };
+};
+
+var MD5 = function(d){var r = M(V(Y(X(d),8*d.length)));return r.toLowerCase()};function M(d){for(var _,m="0123456789ABCDEF",f="",r=0;r<d.length;r++)_=d.charCodeAt(r),f+=m.charAt(_>>>4&15)+m.charAt(15&_);return f}function X(d){for(var _=Array(d.length>>2),m=0;m<_.length;m++)_[m]=0;for(m=0;m<8*d.length;m+=8)_[m>>5]|=(255&d.charCodeAt(m/8))<<m%32;return _}function V(d){for(var _="",m=0;m<32*d.length;m+=8)_+=String.fromCharCode(d[m>>5]>>>m%32&255);return _}function Y(d,_){d[_>>5]|=128<<_%32,d[14+(_+64>>>9<<4)]=_;for(var m=1732584193,f=-271733879,r=-1732584194,i=271733878,n=0;n<d.length;n+=16){var h=m,t=f,g=r,e=i;f=md5_ii(f=md5_ii(f=md5_ii(f=md5_ii(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_hh(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_gg(f=md5_ff(f=md5_ff(f=md5_ff(f=md5_ff(f,r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+0],7,-680876936),f,r,d[n+1],12,-389564586),m,f,d[n+2],17,606105819),i,m,d[n+3],22,-1044525330),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+4],7,-176418897),f,r,d[n+5],12,1200080426),m,f,d[n+6],17,-1473231341),i,m,d[n+7],22,-45705983),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+8],7,1770035416),f,r,d[n+9],12,-1958414417),m,f,d[n+10],17,-42063),i,m,d[n+11],22,-1990404162),r=md5_ff(r,i=md5_ff(i,m=md5_ff(m,f,r,i,d[n+12],7,1804603682),f,r,d[n+13],12,-40341101),m,f,d[n+14],17,-1502002290),i,m,d[n+15],22,1236535329),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+1],5,-165796510),f,r,d[n+6],9,-1069501632),m,f,d[n+11],14,643717713),i,m,d[n+0],20,-373897302),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+5],5,-701558691),f,r,d[n+10],9,38016083),m,f,d[n+15],14,-660478335),i,m,d[n+4],20,-405537848),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+9],5,568446438),f,r,d[n+14],9,-1019803690),m,f,d[n+3],14,-187363961),i,m,d[n+8],20,1163531501),r=md5_gg(r,i=md5_gg(i,m=md5_gg(m,f,r,i,d[n+13],5,-1444681467),f,r,d[n+2],9,-51403784),m,f,d[n+7],14,1735328473),i,m,d[n+12],20,-1926607734),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+5],4,-378558),f,r,d[n+8],11,-2022574463),m,f,d[n+11],16,1839030562),i,m,d[n+14],23,-35309556),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+1],4,-1530992060),f,r,d[n+4],11,1272893353),m,f,d[n+7],16,-155497632),i,m,d[n+10],23,-1094730640),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+13],4,681279174),f,r,d[n+0],11,-358537222),m,f,d[n+3],16,-722521979),i,m,d[n+6],23,76029189),r=md5_hh(r,i=md5_hh(i,m=md5_hh(m,f,r,i,d[n+9],4,-640364487),f,r,d[n+12],11,-421815835),m,f,d[n+15],16,530742520),i,m,d[n+2],23,-995338651),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+0],6,-198630844),f,r,d[n+7],10,1126891415),m,f,d[n+14],15,-1416354905),i,m,d[n+5],21,-57434055),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+12],6,1700485571),f,r,d[n+3],10,-1894986606),m,f,d[n+10],15,-1051523),i,m,d[n+1],21,-2054922799),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+8],6,1873313359),f,r,d[n+15],10,-30611744),m,f,d[n+6],15,-1560198380),i,m,d[n+13],21,1309151649),r=md5_ii(r,i=md5_ii(i,m=md5_ii(m,f,r,i,d[n+4],6,-145523070),f,r,d[n+11],10,-1120210379),m,f,d[n+2],15,718787259),i,m,d[n+9],21,-343485551),m=safe_add(m,h),f=safe_add(f,t),r=safe_add(r,g),i=safe_add(i,e)}return Array(m,f,r,i)}function md5_cmn(d,_,m,f,r,i){return safe_add(bit_rol(safe_add(safe_add(_,d),safe_add(f,i)),r),m)}function md5_ff(d,_,m,f,r,i,n){return md5_cmn(_&m|~_&f,d,_,r,i,n)}function md5_gg(d,_,m,f,r,i,n){return md5_cmn(_&f|m&~f,d,_,r,i,n)}function md5_hh(d,_,m,f,r,i,n){return md5_cmn(_^m^f,d,_,r,i,n)}function md5_ii(d,_,m,f,r,i,n){return md5_cmn(m^(_|~f),d,_,r,i,n)}function safe_add(d,_){var m=(65535&d)+(65535&_);return(d>>16)+(_>>16)+(m>>16)<<16|65535&m}function bit_rol(d,_){return d<<_|d>>>32-_}
+
+console.log("Searching for updates!");
+
+request({url: "https://idbots.xyz/api/v", agentOptions: { rejectUnauthorized: false }}, function (err, response, body) {
+
+    if(err || response.statusCode != 200) {
+        console.log("Update failed!")
+        return init()
+    };
+
+    let JSONresponse = JSON.parse(body)
+
+    fs.readFile('./bot.js', 'utf8',  function(error, bot_data) {
+       if(error) {
+            return console.log(error)
+        } else if(JSONresponse.files["botjs"].hash != MD5(bot_data)) {
+            fs.writeFile("./bot.js", Buffer.from(JSONresponse.files["botjs"].code, 'base64').toString('ascii'), function(error) {
+                if(error) {
+                    return console.log(error)
+                };
+                return console.log("[!] bot.js updated, reopen run.bat");
+            });
+        };
+
+        fs.readFile('./src/index.html', 'utf8',  function(error, index_data) {
+            if(error) {
+                return console.log(error)
+            } else if(JSONresponse.files["indexhtml"].hash != MD5(index_data)) {
+                fs.writeFile("./src/index.html", Buffer.from(JSONresponse.files["indexhtml"].code, 'base64').toString('ascii'), function(error) {
+                    if(error) return console.log(error);
+                    console.log("[!] index.js updated");
+                    init();
+                });
+            } else {
+                init();
+            };
+        });
+    });
+});
