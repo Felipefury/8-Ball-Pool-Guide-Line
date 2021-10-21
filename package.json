@@ -1,6 +1,8 @@
 {
-  "name": "8bpgl_hack",
-  "version": "3.0.9",
+  "name": "8ballpool_guideline",
+  "version": "4.0.0",
+  "botjs": "4.0",
+  "loginhtml": "4.0",
   "description": "8 Ball Pool Guide Line",
   "main": "bot.js",
   "scripts": {
@@ -14,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
-    "electron": "^8.0.1",
+    "electron": "^8.5.5",
     "fs": "0.0.1-security",
     "request": "^2.88.2"
   },
