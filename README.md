@@ -1,4 +1,9 @@
-<h1 align="center">8 Ball Pool Guide Line</h1>
+<br />
+<div align="center">
+    <img src="https://raw.githubusercontent.com/Felipefury/8-Ball-Pool-Hack-Guide-Line/master/src/img/icon.png">
+  </a>
+</div>
+
 <p align="center">
     <a href="https://discord.gg/CxG3f7S">
         <img src="https://img.shields.io/discord/675323046680330261.svg?label=Discord&logo=discord" alt="Discord"/>
@@ -8,56 +13,74 @@
     </a>
 </p>
 
-**en-US**
-> Created to help 8 ball pool. We also have a free version, if you don't to buy the hack if you can use it as you want. But if you buy,  we will contact you after confirming your purchase. If you have any trouble, do a issue, any question? go to [discord](https://discord.gg/CxG3f7S) and we are ready to help you.
+<p align="center"> Created to help and make <b>8 Ball Pool</b> more fun <b><a href="https://youtu.be/Lgy_c7YkUyA">Youtube Video</a></b>. <b>If you bought the <a href="https://shoppy.gg/product/NJzfO9I">paid version</a>, join our <a href="https://discord.gg/CxG3f7S">Discord</a> and message one of the admins (GM#4630 or ZDy#4307)</b> and we are ready to help you. </p>
 
-**pt-BR**
-> Criado para ajudar no 8 ball pool. Nós também temos uma versão gratuita, caso não queira comprar o hack pode usa-la a vontade. Mas se você comprar entraremos em contato apos a confirmação da compra. Se você tiver algum problema, crie um issue, alguma pergunta? vá ao [discord](https://discord.gg/CxG3f7S) e estaremos prontos para te ajudar.
+<p align="center"><b>Link to buy with Paypal or Bitcoin: <a href="https://shoppy.gg/product/NJzfO9I">Shoppy</a>, to buy with other cryptocurrencies contact us, we accept most of the Binance cryptocurrencies.</b></p>
 
-Link to Purchase: [Shoppy!](https://shoppy.gg/product/NJzfO9I)
-***we also accept Bitcoin, Ethereum, Litecoin and most Binance cryptocurrencies.***
+<br>
 
-**See more on:**\
-**- Discord Invite: [Discord!](https://discord.gg/CxG3f7S)**\
-**- Youtube Video: [Youtube!](https://youtu.be/Lgy_c7YkUyA)**
+<h1 align="center">8 Ball Pool Guide Line</h1>
 
-Copyright@2020 Indústria dos Bots all rights reserved.
+<p align="center">
+    <img style="width: 473px;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822670057523/gifModo3.gif"/>
+    <img style="width: 479px;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546817338834994/gifModo1.gif"/>
+    <img style="width: 473px;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif"/>
+</p>
 
-![Modo 1 guide line](https://cdn.discordapp.com/attachments/396904623668985865/810546822670057523/gifModo3.gif)
-![Modo 3 guide line](https://cdn.discordapp.com/attachments/396904623668985865/810546817338834994/gifModo1.gif)
-![Modo 2 guide line](https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif)
+
 
 ## Installation
 
-**- Demo video: [Youtube!](https://youtu.be/s4fKPOYkkuU)**
+- **[YouTube Video Tutorial](https://youtu.be/31aOwEu9AgU)**
 
-1. Install [Node.JS!](https://nodejs.org/en/download/)
-2. Download and extract the [repository](https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line/archive/master.zip) to your pc.
-3. Click on install.bat (it'll auto close, if it doesn't close after few minutes, restart it).
-4. Click on run.bat (it'll open a window)
-5. Create an account and login.
-6. Now you can use the *free* version forever.
+**1.** Install **[Node.JS!](https://nodejs.org/en/download/)**<br>
+**2.** Download and extract the **[repository](https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line/archive/master.zip)** to your pc.<br>
+**3.** Open **install.bat** (it'll auto close).<br>
+**4.** Open **run.bat**<br>
+**5.** Create an account and login.<br>
+**6.** Now you can use the *free* version, if you want all functions buy the paid version: **[Shoppy!](https://shoppy.gg/product/NJzfO9I)**
 
-**If you want to have a free trial of the paid version join our discord and message one of the admins.**
 
-# Why our system is safe and you will not be punished?
 
-> How does it work?
+## Why our system is safe and you will not be punished?
 
-We do not do any type of injection or changes in the game's source code, we create an overlay on your screen, so miniclip won't ban you as them don't detect anything.
+**Q:** How does it work?
+
+**A:** We do not do any type of injection or changes in the game's source code, we create an overlay on your screen, so miniclip won't ban you as them don't detect anything.
 
 ![How work](https://cdn.discordapp.com/attachments/396904623668985865/810546814481727558/howwork.gif)
 
-# Shoppy Feedback
 
-you can check it [Here](https://shoppy.gg/@FelipeGM/feedback)
 
-![FeedBack](https://cdn.discordapp.com/attachments/396904623668985865/810545718568681574/feedback.png)
+## Our Feedback
 
-**Todo**
+<p >
+    <a href="https://shoppy.gg/@FelipeGM/feedback">
+        <img style="width: 85%" src="https://cdn.discordapp.com/attachments/396904623668985865/810545718568681574/feedback.png"/>
+    </a>
+</p>
 
-1. Executable version
-2. Fast bank shot keys
-3. Bank shot with more reflex
-4. (Maybe) powermeter
-5. Lucky shot overlay (images)
+
+
+## Compatibility
+* **PC**
+    * - [x] **Microsoft Windows (7,8,8.1,10,11).**
+    * - [x] **Linux.**
+    * - [x] **macOS.**
+
+* **Mobile (🚧 in progress 🚧)**
+    * - [ ] **Android**
+    * - [ ] **iOS**
+
+
+
+## Our team
+
+> Felipe GM &nbsp;&middot;&nbsp;
+> GitHub [@Felipefury](https://github.com/Felipefury) &nbsp;&middot;&nbsp;
+> Discord [GM#4630](https://discord.gg/CxG3f7S)<br>
+> Zeedy &nbsp;&middot;&nbsp;
+> GitHub [@ZeedyDF](https://github.com/ZeedyDF) &nbsp;&middot;&nbsp;
+> Discord [ZDy#4307](https://discord.gg/CxG3f7S)
+
+**IDB.** ©2020, Indústria dos Bots all rights reserved.<br>
