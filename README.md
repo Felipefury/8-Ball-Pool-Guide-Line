@@ -22,9 +22,9 @@
 <h1 align="center">8 Ball Pool Guide Line</h1>
 
 <p align="center">
-    <img style="width: 473px;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822670057523/gifModo3.gif"/>
-    <img style="width: 479px;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546817338834994/gifModo1.gif"/>
-    <img style="width: 473px;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif"/>
+    <img style="width: 48%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822670057523/gifModo3.gif"/>
+    <img style="width: 49%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546817338834994/gifModo1.gif"/>
+    <img style="width: 49%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif"/>
 </p>
 
 
