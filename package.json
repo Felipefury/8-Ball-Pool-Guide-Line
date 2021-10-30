@@ -1,8 +1,6 @@
 {
   "name": "8ballpool_guideline",
   "version": "4.0.0",
-  "botjs": "4.0",
-  "loginhtml": "4.0",
   "description": "8 Ball Pool Guide Line",
   "main": "bot.js",
   "scripts": {
