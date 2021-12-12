@@ -1,6 +1,6 @@
 {
   "name": "8ballpool_guideline",
-  "version": "4.0.0",
+  "version": "5.0.1",
   "description": "8 Ball Pool Guide Line",
   "main": "bot.js",
   "scripts": {
@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
-    "electron": "^8.5.5",
+    "electron": "^10.4.7",
+    "electron-overlay-window": "^2.0.1",
     "fs": "0.0.1-security",
     "request": "^2.88.2"
   },
