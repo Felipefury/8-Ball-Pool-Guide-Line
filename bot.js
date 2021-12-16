@@ -4,7 +4,7 @@ const request = require("request");
 const fs = require('fs');
 
 init = function() {
-   console.log("V5.0.1 BETA coded By Zeedy and GM, If you have any suggestion message us on discord. Don't close the CMD while using the hack neither the minized version of the auto mode.");
+   console.log("V5.0.1 BETA coded By GM#4630 and ZDy#1337, If you have any suggestion message us on discord. Don't close the CMD while using the hack neither the minized version of the auto mode.");
 
    var settings = {
       location: undefined,
@@ -85,11 +85,11 @@ init = function() {
 
       globalShortcut.register('M', () => { win.webContents.send('key', 'M', screen.getCursorScreenPoint()) });
       globalShortcut.register('V', () => { win.webContents.send('key', 'V', screen.getCursorScreenPoint()) });
+      globalShortcut.register('F', () => { win.webContents.send('key', 'F', screen.getCursorScreenPoint()) });
 
       if ("bot" == settings.location) {
          globalShortcut.register('B', () => { win.webContents.send('key', 'B', screen.getCursorScreenPoint()) });
          globalShortcut.register('N', () => { win.webContents.send('key', 'N', screen.getCursorScreenPoint()) });
-         globalShortcut.register('F', () => { win.webContents.send('key', 'F', screen.getCursorScreenPoint()) });
          globalShortcut.register('C', () => { win.webContents.send('key', 'C', screen.getCursorScreenPoint()) });
          globalShortcut.register('Up', () => { win.webContents.send('key', 'UP', screen.getCursorScreenPoint()) });
          globalShortcut.register('Down', () => { win.webContents.send('key', 'DOWN', screen.getCursorScreenPoint()) });
