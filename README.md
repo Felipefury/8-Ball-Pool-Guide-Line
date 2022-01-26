@@ -15,7 +15,7 @@
 
 <p align="center"> Created to help and make <b>8 Ball Pool</b> more fun <b><a href="https://youtu.be/Lgy_c7YkUyA">Youtube Video</a></b>. <b>If you bought the <a href="https://shoppy.gg/product/NJzfO9I">paid version</a>, join our <a href="https://discord.gg/CxG3f7S">Discord</a> and message one of the admins (GM#4630 or ZDy#4307)</b> and we are ready to help you. </p>
 
-<p align="center"><b>Link to buy with Paypal or Bitcoin: <a href="https://shoppy.gg/product/NJzfO9I">Shoppy</a>, to buy with other cryptocurrencies contact us, we accept most of the Binance cryptocurrencies and also accept skrill.</b></p>
+<p align="center"><b>Link to buy with Paypal or Bitcoin: <a href="https://shoppy.gg/product/NJzfO9I">Shoppy</a>, to buy with other cryptocurrencies contact us, we accept most of the Binance cryptocurrencies and also accept skrill and PIX.</b></p>
 
 <br>
 
