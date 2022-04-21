@@ -33,6 +33,10 @@ Initiate = function() {
       this.window.center();
    };
 
+   function mousePos() {
+      BOT.window.webContents.send('mousePos', screen.getCursorScreenPoint()); 
+   };
+
    setInterval(() => {
       globalShortcut.register('Shift+X', () => {
          BOT.window.webContents.send('register', BOT.keys)
