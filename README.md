@@ -65,9 +65,9 @@
 
 ## Compatibility
 * **PC**
-    * - [x] **Microsoft Windows (7,8,8.1,10,11).**
-    * - [x] **Linux.**
-    * - [x] **macOS.**
+    * - [x] **Microsoft Windows (7,8,8.1,10,11).** Manual Mode: ✅, Auto Mode: ✅
+    * - [x] **Linux.** Manual Mode: ✅, Auto Mode: ?
+    * - [x] **macOS.** Manual Mode: ✅, Auto Mode: ❌
 
 * **Mobile (🚧 in progress 🚧)**
     * - [ ] **Android**
