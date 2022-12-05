@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-    <img src="Guide-Line/master/src/img/icon.png">
+    <img src="8-Ball-Pool-Guide-Line/master/src/img/icon.png">
   </a>
 </div>
 
