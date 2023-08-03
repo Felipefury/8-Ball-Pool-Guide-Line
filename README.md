@@ -13,9 +13,15 @@
     </a>
 </p>
 
+
+
+<h3 align="center">Non-injectable</h3>
+<p align="center">Working externally with Computer Vision and AI </p>
+
+<p align="center">Your account will NEVER be banned. </p>
 <p align="center"> Created to help and make Ball Pool more fun <b><a href="https://www.youtube.com/watch?v=iAhjjpUNwUc">Youtube Video</a></b></p>
 
-<p align="center"><b><a href="https://shoppy.gg/product/NJzfO9I">Shoppy</a></p>
+<p align="center">Link to buy: <b><a href="https://shoppy.gg/product/NJzfO9I">Shoppy</a></p>
 
 <br>
 
