@@ -22,10 +22,8 @@
 <h1 align="center">Guide Line</h1>
 
 <p align="center">
-    <img style="width: 48%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822670057523/gifModo3.gif"/>
-    <img style="width: 49%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546817338834994/gifModo1.gif"/>
-    <img style="width: 49%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif"/>
-    <img style="width: 48%;" src="https://cdn.discordapp.com/attachments/675323146743578650/941501241001922590/automode1.gif"/>
+    <img style="width: 85%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif"/>
+    <img src="https://cdn.discordapp.com/attachments/675323146743578650/941501241001922590/automode1.gif"/>
 </p>
 
 
