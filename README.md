@@ -29,7 +29,7 @@
 
 <p align="center">
     <img style="width: 47%;" src="https://cdn.discordapp.com/attachments/396904623668985865/810546822526795796/gifModo2.gif"/>
-    <img style="width: 47%; src="https://cdn.discordapp.com/attachments/675323146743578650/941501241001922590/automode1.gif"/>
+    <img style="width: 47%;" src="https://cdn.discordapp.com/attachments/675323146743578650/941501241001922590/automode1.gif"/>
 </p>
 
 
