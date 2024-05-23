@@ -61,7 +61,7 @@
 
 <p >
     <a href="https://shoppy.gg/@FelipeGM/feedback">
-        <img style="width: 85%" src="https://cdn.discordapp.com/attachments/675323146743578650/921122674439233576/all2.png"/>
+        <img style="width: 85%" src="https://cdn.discordapp.com/attachments/681637050784677898/1243003467036102776/1233.png?ex=664fe4b0&is=664e9330&hm=85c7dbd900f7c87832a1adbc7851214b86794f0ab22c375d5e093de8138c3c4e&"/>
     </a>
 </p>
 
