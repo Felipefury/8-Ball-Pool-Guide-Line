@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-    <img src="src/img/icon.png">
+    <img src="https://avatars.githubusercontent.com/u/17801425?s=400&u=138f5bc529ac497edbffa79f9cf932984a8c9f54&v=4">
   </a>
 </div>
 
