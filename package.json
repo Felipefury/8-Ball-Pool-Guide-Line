@@ -13,10 +13,9 @@
   "author": "Felipe GM and Zeedy",
   "license": "ISC",
   "dependencies": {
-    "child_process": "^1.0.2",
     "electron": "^16.0.5",
     "fs": "0.0.1-security",
-    "request": "^2.88.2"
+    "bcrypt": "^6.0.0"
   },
   "bugs": {
     "url": "https://github.com/Felipefury/8-Ball-Pool-Hack-Guide-Line/issues"
