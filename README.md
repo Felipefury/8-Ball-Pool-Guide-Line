@@ -22,6 +22,7 @@
 <p align="center"> Created to help and make Ball Pool more fun <b><a href="https://www.youtube.com/watch?v=iAhjjpUNwUc">Youtube Video</a></b></p>
 
 <p align="center">Link to buy: <b><a href="https://shoppy.gg/product/NJzfO9I">Shoppy</a></p>
+<p align="center">our website: <b><a href="https://idbots.xyz">idbots.xyz</a></p>
 
 <br>
 
@@ -53,7 +54,7 @@
 
 **A:** We do not do any type of injection or changes in the game's source code, we create an overlay on your screen.
 
-![How work](https://cdn.discordapp.com/attachments/396904623668985865/810546814481727558/howwork.gif)
+![How work](https://cdn.discordapp.com/attachments/681637050784677898/1477864219700629544/notice.png?ex=69a6f88f&is=69a5a70f&hm=df0e919683857974daf132616dca846df38d76b527e13af90dec55ed01f3c455)
 
 
 
